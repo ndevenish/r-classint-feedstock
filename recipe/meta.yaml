@@ -49,7 +49,7 @@ test:
 
 about:
   home: https://github.com/r-spatial/classInt/
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Selected commonly used methods for choosing univariate class intervals for mapping or other graphics purposes.
   license_family: GPL2
   license_file:
