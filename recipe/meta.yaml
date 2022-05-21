@@ -21,6 +21,10 @@ build:
 
 requirements:
   build:
+    - cross-r-base {{ r_base }}  # [build_platform != target_platform]
+    - r-kernsmooth  # [build_platform != target_platform]
+    - r-class  # [build_platform != target_platform]
+    - r-e1071  # [build_platform != target_platform]
     - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('fortran') }}        # [not win]
